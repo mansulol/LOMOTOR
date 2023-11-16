@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOMOTOR</title>
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="css/styleComunity.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="logo">
+      <img src="imgs/lomotor.png" alt="Img-logo" />
+    </div>
+    <nav id="navbar" class="navbar navbar-expand-sm">
+      <div class="container">
+        <a href="#">
+          <i id="menu-bar" class="fa-solid fa-bars"></i>
+          <!--Menu Bar-->
+        </a>
+        <div class="collapse navbar-collapse">
+          <ul class="nav-bar-list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutCars.html">ABOUT CARS</a></li>
+            <li><a href="comunity.html">COMUNITY</a></li>
+          </ul>
+        </div>
+        <form class="d-flex" action="">
+          <button class="btn-suscribe" type="button">Suscribe!</button>
+        </form>
+      </div>
+    </nav>
+
+    <section class="container-fluid comunity-section">
+      <div class="container-fluid title">
+        <hr class="line-comunity" />
+        <h1>Comunity</h1>
+        <hr class="line-comunity" />
+      </div>
+
+      <form id="comment-form" action="comunity.html" class="container-fluid comment-container">
+        <div class="container user-container">
+          <i class="user-photo fa-regular fa-user"></i>
+          <input id="inputName" type="text" placeholder="Name..." />
+        </div>
+        <div class="container">
+          <textarea id="textArea" placeholder="Comment..." rows="8">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore nemo vitae harum maiores nam voluptate illo praesentium assumenda ea quasi.
+          </textarea>
+        </div>
+        <div class="container btn-comment">
+          <button id="btn-submit" type="submit">Submit</button>
+        </div>
+      </form>
+      <hr class="line-comments" />
+      <div id="comments-container-group" class="container-fluid">
+
+
+        <div class="container-fluid comments-container">
+          <div class="container col-1 col-sm-1 user-photo-container">
+            <i class="users-photos fa-regular fa-user"></i>
+          </div>
+          <div class="container-fluid col-10 col-sm-10 users-containers">
+            <p class="h2">John Doe</p>
+            <p>
+              I recently acquired a Porsche 911 Carrera and am absolutely in love with its performance and sleek design! Does anyone else here have experience with this iconic model?
+            </p>
+            <p class="h4">23 February, 2023</p>
+          </div>
+        </div>
+
+        
+        <div class="container-fluid comments-container">
+          <div class="container col-1 col-sm-1 user-photo-container">
+            <i class="users-photos fa-regular fa-user"></i>
+          </div>
+          <div class="container-fluid col-10 col-sm-10 users-containers">
+            <p class="h2">Emily Davis</p>
+            <p>
+              I'm thinking of tuning my Ford Mustang to give it a more personalized touch. Any tips on performance improvements or styles that really stand out? I'm excited to hear your suggestions!
+            </p>
+            <p class="h4">16 May, 2009</p>
+          </div>
+        </div>
+        <div class="container-fluid comments-container">
+          <div class="container col-1 col-sm-1 user-photo-container">
+            <i class="users-photos fa-regular fa-user"></i>
+          </div>
+          <div class="container-fluid col-10 col-sm-10 users-containers">
+            <p class="h2">Alex Johnson</p>
+            <p>
+              Does anyone else keep a close eye on the latest developments in electric cars? Technology is advancing rapidly, and I'm eager to hear opinions on models like the Tesla Model 3 and Nissan Leaf. Which one do you think will lead the way in the future of electric vehicles?
+            </p>
+            <p class="h4">09 September, 2020</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <div class="container-fluid btn-load-more">
+      <button>Load More</button>
+    </div>
+
+    <hr class="line-footer" />
+    <footer id="contact-us" class="contact-section">
+      <div class="social-medias">
+        <div class="social-media-street-signature">
+          <img src="imgs/lomotor.png" alt="img-street-signature" />
+        </div>
+        <div class="social-media-bar">
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-square-youtube"></i>
+        </div>
+      </div>
+      <div class="find-us">
+        <h2>Find us</h2>
+        <h3>Address</h3>
+
+        <h3>Store [&] Office</h3>
+        <h3>467-DII Johar Town Lahore, Pakistan</h3>
+        <h2>Office Hour</h2>
+        <h3>Monday - Sunday 10:00 - 18:00</h3>
+      </div>
+      <div class="useful-links">
+        <h2>Useful-links</h2>
+        <h3>About Us</h3>
+        <h3>Terms</h3>
+        <h3>FAQ'S</h3>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/41364728e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
