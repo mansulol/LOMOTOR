@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body div {
+  width: 100vw;
+}
+.logo {
+  width: 100vw;
+  height: 12vh;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 600px;
+  min-width: 300px;
+  max-width: 800px;
+}
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131417;
+  font-size: 2rem;
+  width: 100vw;
+}
+.menu-bar {
+  font-size: 3rem;
+}
+.nav-bar-list {
+  display: flex;
+  justify-content: space-around;
+  width: 60vw;
+}
+li {
+  text-decoration: none;
+  list-style-type: none;
+  color: #ffffff;
+}
+.btn-suscribe {
+  width: 150px;
+  height: 62px;
+  background-color: #d35b3b;
+  border: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+button:active {
+  transform: translateY(5px);
+}
+.video {
+  width: 100vw;
+  height: 80vh;
+  object-fit: cover;
+  position: relative;
+  margin: 0;
+}
+.section-home {
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  z-index: 10;
+}
+.title {
+  width: 60vw;
+  min-width: 100px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 5vw;
+  color: #cccccc;
+}
+.title h1 {
+  font-size: 5rem;
+  font-weight: 750;
+}
+.title h3 {
+  font-size: 1rem;
+}
+.section-news {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #cccccc;
+}
+.title-news {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 90vw;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  font-family: "Newsreader";
+  color: #131417;
+}
+.line-news {
+  width: 30vw;
+  border: 3px solid #131417;
+}
+.container-news {
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+.new {
+  width: 22vw;
+  min-width: 300px;
+  max-width: 600px;
+}
+.new img {
+  width: 100%;
+}
+.new .h2 {
+  margin: 1em;
+  font-size: 1.2em;
+}
+.new .h4 {
+  font-size: 1em;
+}
+.btn-load-more {
+  display: flex;
+  justify-content: center;
+}
+.btn-load-more button {
+  margin: 2vh;
+  background-color: transparent;
+  border: 2px solid #131417;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #131417;
+  width: 60vw;
+  min-width: 300px;
+  max-width: 800px;
+}
+.iconic-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #131417;
+}
+.line-iconic {
+  width: 30vw;
+  border: 3px solid #ffffff;
+  margin: 0;
+}
+.title-iconic {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 90vw;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+}
+.container-iconic {
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 4em;
+}
+.iconic {
+  width: 22vw;
+  min-width: 300px;
+  max-width: 600px;
+}
+.iconic img {
+  width: 100%;
+}
+.iconic {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.iconic img {
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+  color: #ffffff;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000050;
+}
+
+.iconic:hover img {
+  transform: translateY(-10px);
+  filter: brightness(70%);
+}
+.iconic:active img {
+  transform: translateY(-20px);
+  filter: brightness(70%);
+}
+.iconic:touch img {
+  transform: translateY(-20px);
+  filter: brightness(70%);
+}
+
+.iconic:hover .texto {
+  opacity: 1;
+}
+.btn-load-more-iconic {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.btn-load-more-iconic button {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+
+  width: 20vw;
+  min-width: 300px;
+  max-width: 800px;
+}
+.line-footer {
+  border: 2px solid #ffffff;
+  margin: 0;
+}
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100vw;
+  color: #ffffff;
+  background-color: #131417;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.contact-section > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.social-medias {
+  width: 50vw;
+  text-align: center;
+}
+.social-media-bar {
+  font-size: 2em;
+}
+.social-media-street-signature img {
+  width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .title h1 {
+    font-size: 2rem;
+  }
+  .social-medias {
+    width: 100vw;
+  }
+  .contact-section > div {
+    width: 100vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .nav-bar-list {
+    font-size: 1.2rem;
+  }
+  .title h1 {
+    font-size: 3rem;
+  }
+  .title h3 {
+    font-size: 1rem;
+  }
+  .social-media-street-signature {
+    width: 100vw;
+  }
+  .contact-section > div {
+    width: 100vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .nav-bar-list {
+    font-size: 2rem;
+  }
+  .social-medias {
+    width: 40vw;
+  }
+  .social-media-street-signature {
+    width: 100%;
+  }
+  .contact-section > div {
+    width: 30vw;
+  }
+  .title h1 {
+    font-size: 4rem;
+  }
+  .title h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
